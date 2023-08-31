@@ -7,7 +7,7 @@ function UserList(props) {
       {props.users.map((user) => (
         <UserCard
           key={user.id}
-          handleUserClick={() => console.log("u clicked the user")}
+          userId={user.id} setId={props.setId}
           {...user}
         />
       ))}
